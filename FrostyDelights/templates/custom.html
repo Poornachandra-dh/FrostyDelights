@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+
+{% block title%}/custom_flavour {% endblock title%}
+
+{% block body %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/736x/ee/00/ea/ee00ea60caf3463c84e02e4c18ee2cc1.jpg');
+            background-color: #fef9f4;
+            color: #333;
+        }
+        .services-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .services-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ff6f61;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .services-section p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 30px;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service {
+            background: #fff;
+            background-color: #FFF0F5;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .service img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+        }
+        .service h3 {
+            font-size: 1.2rem;
+            <!--color: #ff6f61;-->
+            margin-bottom: 10px;
+            font-family: 'Comic Sans MS', fantasy;
+            color:brown;
+        }
+        .service p {
+            font-size: 0.9rem;
+            color: #555;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <section class="services-section">
+        <h2 style="font-family: 'Comic Sans MS', fantasy; color:brown;">Custom Flavours</h2>
+        <p>At FrostyDelights, we believe every scoop tells a story. Create your own custom ice cream flavor by combining your favorite ingredients, 
+            mix-ins, and toppings. 
+            From velvety vanilla bases to bold chocolate swirls, the possibilities are endless.!</p>
+        <div class="services-container">
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/ae/36/95/ae3695f39c91093e61e81105684f3021.jpg" alt="Custom Flavors">
+                <a class="nav-link" href="/custom"> <h3 >Hot chocolate</h3> </a>
+                <p>View all</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/c6/9d/7a/c69d7a54e3699f04fd93d8f319f474fa.jpg" alt="Catering">
+                <h3>Butterscotch</h3>
+                <p>View all</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/49/0e/a4/490ea40b0d6c87a08d64fda58377c57f.jpg" alt="Seasonal Specials">
+                <h3>Cold chocolate</h3>
+                <p>View all</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/56/40/90/5640900cfa5cb30ebb348c1e3a097fc1.jpg" alt="Delivery">
+                <h3>Soft candy</h3>
+                <p>View all</p>
+            </div>
+        </div>
+    </section>
+    <section class="services-section">
+        <div class="services-container">
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/7a/4f/29/7a4f2959e295b29e518cd08a939fcb80.jpg" alt="Custom Flavors">
+                <a class="nav-link" href="/custom"> <h3>Cheese cake</h3> </a>
+                <p>View all</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/e6/52/d3/e652d3bf1617f8a57cfbed08d0eb1fcc.jpg" alt="Catering">
+                <h3>Icy Pole</h3>
+                <p>View all</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/70/14/10/7014104fb2d45799d3ec07bc90b00853.jpg" alt="Seasonal Specials">
+                <h3>Snow Cone</h3>
+                <p>View all</p>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/736x/a1/09/49/a1094953d2990a7127a8e4d1e7b02715.jpg" alt="Delivery">
+                <h3>Milk Shake</h3>
+                <p>View all</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+</body>
+</html>
+
+{% endblock body %}

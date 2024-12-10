@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title%}Services {% endblock title%}
+
+{% block body %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/736x/80/72/d9/8072d9cc456fba4a0cfbd7ff0872861d.jpg');
+          <!---- background-color: #fef9f4;-->
+            color: #333;
+            background-image:url('https://i.pinimg.com/736x/59/c3/2b/59c32b165640cbd28a1d3f4808f8550a.jpg');
+        }
+        .services-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .services-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ff6f61;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .services-section p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 30px;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .service img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+        }
+        .service h3 {
+            font-size: 1.2rem;
+            color: #ff6f61;
+            margin-bottom: 10px;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .service p {
+            font-size: 0.9rem;
+            color: #555;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <section class="services-section" style="background-image:url('https://i.pinimg.com/736x/59/c3/2b/59c32b165640cbd28a1d3f4808f8550a.jpg');">
+        <h2 style="color:brown; ">Our Services</h2>
+        <p>We offer a delightful range of ice cream experiences to sweeten your day!</p>
+        <div class="services-container" >
+            <div class="service">
+                <img src="https://images.pexels.com/photos/27976945/pexels-photo-27976945/free-photo-of-a-dessert-with-chocolate-sauce-and-fruit-on-a-plate.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/100" alt="Custom Flavors">
+                <a class="nav-link" href="/custom"> <h3>Custom Flavors</h3> </a>
+                <p>Create your dream ice cream flavor with our personalized mixing options.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.pexels.com/photos/20683708/pexels-photo-20683708/free-photo-of-hands-holding-ice-cream-in-cafe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/100" alt="Catering">
+                <h3>Catering</h3>
+                <p>Perfect for weddings, parties, and events—let us sweeten your special day!</p>
+            </div>
+            <div class="service">
+                <img src="https://images.pexels.com/photos/1200034/pexels-photo-1200034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/100" alt="Seasonal Specials">
+                <h3>Seasonal Specials</h3>
+                <p>Enjoy exclusive ice cream flavors inspired by every season of the year.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.pexels.com/photos/4393532/pexels-photo-4393532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/100" alt="Delivery">
+                <h3>Delivery</h3>
+                <p>Get your favorite ice creams delivered straight to your doorstep.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+{% endblock body %}

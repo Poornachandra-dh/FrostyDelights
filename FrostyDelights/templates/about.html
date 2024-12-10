@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+
+{% block title%}About {% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fef9f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: brown;
+            color: white;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .team-section {
+            padding: 40px 20px;
+        }
+        .team-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #ff6f61;
+        }
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin: 10px 0 5px;
+            color: brown;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .team-member p {
+            font-size: 0.9rem;
+            color: #666;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            margin-top: 40px;
+            background-color: brown;
+            color: white;
+            padding: 10px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 style="color:white;  font-family: 'Comic Sans MS', fantasy;">Meet the Team</h1>
+        <p style="color:white;  font-family: 'Comic Sans MS', fantasy;">The creative minds behind our Ice Cream Website!</p>
+    </header>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2 style="color:brown;  font-family: 'Comic Sans MS', fantasy;">Our Team Members</h2>
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="https://i.pinimg.com/736x/8f/f4/d8/8ff4d85a8c64c9678334dd0f87f2899a.jpg" alt="Poornachandra">
+                <h3>Poornachandra</h3>
+                <p>Project Manager - Ensuring everything runs smoothly.</p>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="https://i.pinimg.com/736x/31/f5/09/31f5095514322024b16d42d042e0a4cc.jpg" alt="Vikas">
+                <h3>Vikas</h3>
+                <p>Lead Designer - Bringing creativity and designs to life.</p>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="https://i.pinimg.com/736x/ce/d4/4a/ced44a15c6f187b76d6479a03bdd773f.jpg" alt="Nikhil">
+                <h3>Nikhil</h3>
+                <p>Developer - Turning ideas into functional code.</p>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <img src="https://i.pinimg.com/736x/88/b9/9a/88b99a0fce8cd99551a02736ba2f2cf1.jpg" alt="Pramodh">
+                <h3>Pramodh</h3>
+                <p>Content Writer - Crafting sweet and engaging stories.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p >&copy; 2024 FrostyDelights Project Team. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+{% endblock body %}

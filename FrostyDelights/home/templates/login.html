@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fef9f4;
+            color: #333;
+            background-image: url('https://i.pinimg.com/736x/ee/00/ea/ee00ea60caf3463c84e02e4c18ee2cc1.jpg');
+        }
+        label{
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+         }
+        .contact-section {
+            padding: 40px 20px;
+            background-color: #ffefea;
+            text-align: center;
+            
+        }
+        .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ff6f61;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .contact-section p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+            color: #555;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-container textarea {
+            height: 100px;
+        }
+        .contact-container button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .contact-container button:hover {
+            background-color: #e65851;
+        }
+        .contact-details {
+            margin-top: 30px;
+            color: #555;
+        }
+        .contact-details h3 {
+            font-size: 1.2rem;
+            color: #ff6f61;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+        .contact-details p {
+            margin: 5px 0;
+            font-family: 'Comic Sans MS', fantasy;
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-section" style="background-image: url('https://i.pinimg.com/736x/ee/00/ea/ee00ea60caf3463c84e02e4c18ee2cc1.jpg');">
+        <h2 style="color:brown; font-family: 'Comic Sans MS', fantasy;">Login</h2>
+        <p>Create Your Account And Join us!! </p>
+        <div class="contact-container">
+            <!--<form  method="POST">
+                 {% csrf_token %}
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text,number" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>-->
+            <form method="post">
+                {% csrf_token %}
+                <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" id="username" name="username">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" name="pass">
+            <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="/">Sign up</a></p>
+        </div>
+        <div class="contact-details">
+            <h3 style="color:brown;">Our Details</h3>
+            <p>Email: FrostyDelights@gmail.com</p>
+            <p>Phone: +91 1234567895</p>
+            <p>Address: Mandya </p>
+        </div>
+    </section>
+</body>
+</html>
+
+{% endblock body %}
+
+
+
+
+
+
+

@@ -1,0 +1,427 @@
+{% extends 'base.html' %}
+
+{% block title%}Home {% endblock title%}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Section Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            
+            
+          <!---- background-color: #fef9f4;-->
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            
+            height: 100vh;
+        }
+
+        .left-section, .right-section {
+            width: 100%;
+        }
+
+        .left-section {
+            background-color: ;
+            background-image: url('https://i.pinimg.com/736x/3e/3a/d0/3e3ad01375f36783f7033ad6b2f0aa24.jpg');
+            max-width: 800px;
+            margin-top: 50px;
+        }
+
+        .right-section {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .right-section-4 {
+          background-color: ;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius:20%;
+          
+          
+      }
+
+      .left-section-4 {
+        background-color: ;
+        background-image: url('https://i.pinimg.com/736x/f5/75/2e/f5752eff159b26b96cfce55b8836fc8e.jpg');
+        max-width: 800px;
+        margin-top: 200px;
+    }
+
+        .right-section video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } 
+
+        .right-section img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+
+      section {
+        padding: 10px;
+       <!-- max-width: 800px;-->
+        margin: 110px auto;
+       
+        border-radius: 8px;
+        <!--box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);-->
+       <!--background-image: url('https://i.pinimg.com/736x/3e/3a/d0/3e3ad01375f36783f7033ad6b2f0aa24.jpg');
+}
+    section h2 {
+        color: brown;
+        margin-bottom: 10px;
+        font-family: 'Comic Sans MS', fantasy;
+        font-size: 35px;
+    }
+    section p {
+        margin: 10px 0;
+        font-family: 'Comic Sans MS', fantasy;
+        font-size: 20px;
+    }
+
+    .services-section {
+      padding: 20px;
+      text-align: center;
+  }
+  .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+  .service {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 0;
+      width: 250px;
+      height: 200px; /* Set a fixed height for each div */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image completely fills the div */
+  }
+  .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+    
+
+  <1!-- section-2-->
+
+
+  .container-2 {
+    display: flex;
+    width: 100%; /* Make the container span the full width */
+    height: 100vh; /* Set height to fill the entire viewport */
+}
+.left-section-2, .right-section-2 {
+    flex: 1; /* Ensure both sections take equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.left-section-2 {
+    background-color: #fff;
+}
+.right-section-2 {
+    background-color: ;
+}
+.right-section-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.left-section-2 button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.left-section-2 button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-section-2, .right-section-2 {
+        height: 50vh; /* Adjust height for vertical stacking */
+    }
+}
+
+
+<!--Footer - area -->
+
+.content-4 {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  background-color: brown;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  flex: 0 0 50%; /* Takes up 50% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:80px;
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Comic Sans MS', fantasy;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: 'Comic Sans MS', fantasy;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+ 
+
+
+
+    <div class="container">
+        <div class="left-section">
+          <section>
+            <h2> <b>Welcome to FrostyDelights !</b></h2>
+            <p> <b>Where every scoop is a celebration of flavor! Dive into a world of creamy, dreamy ice cream crafted with the finest ingredients to bring smiles to all ages. From classic favorites to adventurous new flavors, our menu offers something for everyone. Whether you’re looking for a sweet escape on a sunny day or a delightful treat to share with loved ones, FrostyDelights is your go-to destination. Explore our seasonal specials, customizable sundaes,
+               and refreshing milkshakes to satisfy your cravings. Because at FrostyDelights, happiness is served by the scoop!</b></p>
+            
+        </section>
+
+        </div>
+        <div class="right-section">
+            <!--<video controls autoplay loop muted width="100" height="10">
+                <source src="static/5230362-hd_1080_1920_25fps.mp4 " type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+<!--<img src="https://i.pinimg.com/736x/76/7e/81/767e81fd5ef1fa707b8872949af97a22.jpg" alt="Team Member">-->
+<img src="https://i.pinimg.com/originals/8b/39/4b/8b394b6a982462470fc6e193def3eb91.gif" alt="Team Member">
+        </div>
+    </div>
+
+    <section class="services-section" style="margin-top: 50px;">
+      <div class="services-container">
+          <div class="service">
+              <img src="https://images.pexels.com/photos/27976945/pexels-photo-27976945/free-photo-of-a-dessert-with-chocolate-sauce-and-fruit-on-a-plate.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Custom Flavors">
+          </div>
+          <div class="service">
+              <img src="https://images.pexels.com/photos/20683708/pexels-photo-20683708/free-photo-of-hands-holding-ice-cream-in-cafe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Catering">
+          </div>
+          <div class="service">
+              <img src="https://images.pexels.com/photos/1200034/pexels-photo-1200034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Seasonal Specials">
+          </div>
+          <div class="service">
+              <img src="https://i.pinimg.com/736x/34/49/a5/3449a53622bd8db766933e18da45e2db.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Delivery">
+          </div>
+      </div>
+  </section>
+
+
+  <!--section-2-->
+
+  <div class="container-2" style="margin-top: 50px;">
+    <!-- Left Section -->
+    <div class="left-section-2">
+        <h2 style="color:brown;  font-family: 'Comic Sans MS', fantasy;">Find your new fave flavor.</h2>
+        <p style=" font-family: 'Comic Sans MS', fantasy;">Click the button below to explore more about our flavor!</p>
+        
+        <!--<a href="/custom"><button>Explore Now</button></a>-->
+         
+        {% if user.is_authenticated %}
+         <a href="{% url 'custom' %}"><button>Explore Now</button></a>
+        {% else %}
+         <a href="{% url 'login' %}"><button>Explore Now</button></a>
+        {% endif %}
+
+
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section-2" style="margin-top: 50px;">
+        <img src="https://i.pinimg.com/736x/84/6c/16/846c16f31decfedef0f96bf3c9a61dbf.jpg" alt="Placeholder Image">
+    </div>
+</div>
+
+
+<div class="container">
+  <div class="left-section-4">
+    <section>
+      <h2> <b>"Scoop of Sweetness: The Surprising Benefits of Ice Cream" !</b></h2>
+      <p> <b>But guess what? This beloved treat isn't just a guilty pleasure—ice cream can also bring some surprising benefits to your body, too! Packed with calcium and protein, each scoop helps keep your bones strong and your muscles healthy. It's like a little boost for your skeleton while you indulge in something delicious. The creamy texture comes from full-fat dairy,
+         providing essential vitamins like Vitamin A and Vitamin D, which support your immune system and promote healthy skin.</b></p>
+      
+  </section>
+
+  </div>
+  <div class="right-section-4">
+     <!--<video controls autoplay loop muted>
+          <source src="https://i.pinimg.com/originals/8c/79/cb/8c79cb587c552b3a10c2fa9fed4f4dc2.gif " type="video/gif">
+          Your browser does not support the video tag.
+      </video> -->
+<!--<img src="https://i.pinimg.com/736x/76/7e/81/767e81fd5ef1fa707b8872949af97a22.jpg" alt="Team Member">-->
+<img src="https://i.pinimg.com/736x/76/7e/81/767e81fd5ef1fa707b8872949af97a22.jpg" alt="Team Member"  style="border-radius:20%; margin-top: 100px; margin-left:30%;
+max-width: 500px;">
+  </div>
+</div>
+
+
+
+<!--Footer area -->
+
+<!-- Large footer section -->
+<footer >
+  <h2>Thank You for Visiting!</h2>
+  <p>We're always here to bring you the best flavors and experiences.</p>
+  <p>&copy; 2024  FrostyDelightsDelights. All rights reserved.</p>
+</footer>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .navigation {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .navigation button {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 50%;
+      outline: none;
+    }
+
+    .navigation button:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="slides" id="slides">
+      <img src="https://i.pinimg.com/736x/fc/94/0e/fc940e854543c44fcc3f6e586fe98a38.jpg" alt="Image 1" style="width: 850px; height: 500px;">
+      <img src="https://via.placeholder.com/800x400.jpg?text=Image+2" alt="Image 2">
+      <img src="https://via.placeholder.com/800x400.jpg?text=Image+3" alt="Image 3">
+    </div>
+    <div class="navigation">
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+    let index = 0;
+
+    document.getElementById('prev').addEventListener('click', () => {
+      index = (index - 1 + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+      index = (index + 1) % totalSlides;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    });
+  </script>
+</body>
+</html>-->
+
+
+</body>
+</html>
+
+
+{% endblock body %}
+
+
+
+
+
